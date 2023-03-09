@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -53,6 +55,14 @@
             android:theme="@style/Theme.MainActivity2" />
         <activity
             android:name=".listadapteranddiffutilItemcallback.MainActivity9"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".retrofit.MainActivity10"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".mvvmcompleteexample.MainActivity11"
             android:exported="false"
             android:theme="@style/Theme.MainActivity2" />
     </application>

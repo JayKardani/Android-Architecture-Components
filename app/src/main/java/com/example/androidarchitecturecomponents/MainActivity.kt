@@ -10,6 +10,8 @@ import com.example.androidarchitecturecomponents.databindinglivedata.MainActivit
 import com.example.androidarchitecturecomponents.listadapteranddiffutilItemcallback.MainActivity9
 import com.example.androidarchitecturecomponents.livedata.MainActivity3
 import com.example.androidarchitecturecomponents.mvvm.MainActivity8
+import com.example.androidarchitecturecomponents.mvvmcompleteexample.MainActivity11
+import com.example.androidarchitecturecomponents.retrofit.MainActivity10
 import com.example.androidarchitecturecomponents.roomdatabase.MainActivity7
 import com.example.androidarchitecturecomponents.viewmodel.MainActivity2
 
@@ -50,6 +52,14 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.listAdapterANDDiffUtilItemCallbackButton).setOnClickListener {
             startActivity(Intent(applicationContext, MainActivity9::class.java))
+        }
+
+        findViewById<Button>(R.id.retrofitButton).setOnClickListener {
+            startActivity(Intent(applicationContext, MainActivity10::class.java))
+        }
+
+        findViewById<Button>(R.id.mvvmCompleteExampleButton).setOnClickListener {
+            startActivity(Intent(applicationContext, MainActivity11::class.java))
         }
     }
 }

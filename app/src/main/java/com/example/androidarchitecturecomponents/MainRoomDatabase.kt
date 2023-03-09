@@ -9,12 +9,18 @@ import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.androidarchitecturecomponents.mvvm.Quote
 import com.example.androidarchitecturecomponents.mvvm.QuoteDAO
+import com.example.androidarchitecturecomponents.mvvmcompleteexample.database.QuoteListDAO
+import com.example.androidarchitecturecomponents.mvvmcompleteexample.models.Result
 import com.example.androidarchitecturecomponents.roomdatabase.Contact
 import com.example.androidarchitecturecomponents.roomdatabase.ContactDAO
 import com.example.androidarchitecturecomponents.roomdatabase.Converters
 
 @Database(
-    entities = [Contact::class, Quote::class],
+    entities = [
+        Contact::class,
+        Quote::class,
+        Result::class
+    ],
     version = 2
 )
 @TypeConverters(Converters::class)
@@ -22,6 +28,7 @@ abstract class MainRoomDatabase : RoomDatabase() {
 
     abstract fun contactDAO(): ContactDAO
     abstract fun quoteDAO(): QuoteDAO
+    abstract fun quoteListDAO(): QuoteListDAO
 
     companion object {
 

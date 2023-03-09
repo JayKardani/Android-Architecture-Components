@@ -82,5 +82,23 @@
             android:fontFamily="@font/roboto_bold"
             android:text="ListAdapterANDDiffUtilItemCallback"
             android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/retrofitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Retrofit"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/mvvmCompleteExampleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="MVVMCompleteExample"
+            android:textSize="16sp" />
     </LinearLayout>
 </ScrollView>
