@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <Button
+            android:id="@+id/viewModelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="ViewModel"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/liveDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="LiveData"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dataBindingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="DataBinding"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dataBindingLiveDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="DataBindingLiveData"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dataBindingAdaptersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="DataBindingAdapters"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/rooDatabaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="RooDatabase"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/mvvmArchitectureButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="MVVMArchitecture"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/listAdapterANDDiffUtilItemCallbackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="ListAdapterANDDiffUtilItemCallback"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

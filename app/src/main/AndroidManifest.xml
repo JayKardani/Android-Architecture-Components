@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidArchitectureComponents"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".viewmodel.MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".livedata.MainActivity3"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".databinding.MainActivity4"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".databindinglivedata.MainActivity5"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".databindingadapters.MainActivity6"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".roomdatabase.MainActivity7"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".mvvm.MainActivity8"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+        <activity
+            android:name=".listadapteranddiffutilItemcallback.MainActivity9"
+            android:exported="false"
+            android:theme="@style/Theme.MainActivity2" />
+    </application>
+
+</manifest>
